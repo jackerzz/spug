@@ -12,7 +12,7 @@ import LDAPSetting from './LDAPSetting';
 import OpenService from './OpenService';
 import KeySetting from './KeySetting';
 import SecuritySetting from './SecuritySetting';
-import About from './About';
+// import About from './About';
 import styles from './index.module.css';
 import store from './store';
 
@@ -61,7 +61,7 @@ class Index extends React.Component {
             {selectedKeys[0] === 'alarm' && <AlarmSetting/>}
             {selectedKeys[0] === 'service' && <OpenService/>}
             {selectedKeys[0] === 'key' && <KeySetting/>}
-            {selectedKeys[0] === 'about' && <About/>}
+            {/* {selectedKeys[0] === 'about' && <About/>} */}
           </div>
         </div>
       </AuthDiv>

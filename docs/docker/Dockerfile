@@ -33,10 +33,11 @@ COPY docs/docker/ssh_config /etc/ssh/
 COPY docs/docker/spug.ini /etc/supervisord.d/
 COPY docs/docker/redis.conf /etc/
 
-COPY spug_api/ /data/spug
+COPY spug_api/ /data/spug/spug_api/
 COPY spug_web/build/ /data/spug/spug_web/build/
 
 COPY docs/docker/entrypoint.sh /
+COPY docs/docker/overrides.py /data/spug/spug_api/spug/
 
 VOLUME /data
 EXPOSE 80
